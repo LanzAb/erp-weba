@@ -1,0 +1,30 @@
+{
+    "name": "weba/production-priority",
+    "description": "Production monitoring and SAW-based decision support for production priority",
+    "authors": [
+        {
+            "name": "PT. Weba International",
+            "email": "admin@weba.local"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Weba\\ProductionPriority\\ProductionPriorityServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Weba\\ProductionPriority\\": "src/",
+            "Weba\\ProductionPriority\\Database\\Factories\\": "database/factories/",
+            "Weba\\ProductionPriority\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Weba\\ProductionPriority\\Tests\\": "tests/"
+        }
+    }
+}

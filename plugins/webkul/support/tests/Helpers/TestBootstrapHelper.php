@@ -262,7 +262,7 @@ class TestBootstrapHelper
 
         Closure::bind(function () use ($coreNames): void {
             $this->paths = array_values(array_filter($this->paths, function (string $path) use ($coreNames): bool {
-                if (! preg_match('#plugins/webkul/([^/]+)/#', $path, $matches)) {
+                if (! preg_match('#plugins[/\\\\](?:webkul|weba)[/\\\\]([^/\\\\]+)[/\\\\]#', $path, $matches)) {
                     return true;
                 }
 

@@ -3,6 +3,7 @@
 use App\Providers\AppServiceProvider;
 use App\Providers\Filament\AdminPanelProvider;
 use App\Providers\Filament\CustomerPanelProvider;
+use Weba\ProductionPriority\ProductionPriorityServiceProvider;
 use Webkul\Account\AccountServiceProvider;
 use Webkul\Accounting\AccountingServiceProvider;
 use Webkul\Analytic\AnalyticServiceProvider;
@@ -64,4 +65,5 @@ return [
     TimesheetServiceProvider::class,
     WebsiteServiceProvider::class,
     PluginManagerServiceProvider::class,
+    ProductionPriorityServiceProvider::class,
 ];
